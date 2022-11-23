@@ -50,3 +50,19 @@ print(increase_count()) # Returns 2 because the first call changed the global
 We will use this mechanism a few different ways to preserve expensive-to-get state between calls.
 
 > Note: See [`demonstrate-globals.ipynb`](./demonstrate_globals.ipynb) for a live demonstration.
+
+## Some other ground-work
+
+You will need to make your function part of a Python module to make it warmable.
+Creating a module can be as easy as just creating a ".py" file and then ensuring that it is on your path,
+such as by putting it in the same directory you run Python or altering the Python Path so that your .py file can be found.
+See [Python's documentation](https://setuptools.pypa.io/en/latest/userguide/quickstart.html#) or [Setuptool's quickstart](https://setuptools.pypa.io/en/latest/userguide/quickstart.html#) to learn more.
+
+
+## A variety of approaches
+
+There are a few different ways we can exploit these "persistent" variables to create warmable function calls.
+They are (ordered roughly by complexity):
+
+1. *Storing state as a global*: Useful for when functions have state which only need be loaded in once.
+1. *Launching an external process.* If your code requires running non

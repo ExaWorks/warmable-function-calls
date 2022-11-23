@@ -64,5 +64,5 @@ See [Python's documentation](https://setuptools.pypa.io/en/latest/userguide/quic
 There are a few different ways we can exploit these "persistent" variables to create warmable function calls.
 They are (ordered roughly by complexity):
 
-1. *Storing state as a global*: Useful for when functions have state which only need be loaded in once.
+1. [*Storing state as a global*](./global-state): Useful for when functions have state which only need be loaded in once.
 1. *Launching an external process.* If your code requires running non

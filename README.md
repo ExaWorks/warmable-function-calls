@@ -46,7 +46,7 @@ print(increase_count()) # Returns 1
 print(increase_count()) # Returns 2 because the first call changed the global
 ```
 
-We will use this mechanism a few different ways to preserve expensive-to-get state between calls. See [`demonstrate-globals.ipynb`](./demonstrate_globals.ipynb) for a live demonstration.
+We will use this mechanism a few different ways to preserve expensive-to-get state between calls. See [`demonstrate-globals.ipynb`](./demonstrate-globals.ipynb) for a live demonstration.
 
 These globals have a few limitations.
 For one, they do not stay if the worker process is restarted.

@@ -1,8 +1,8 @@
 # Warmable Function Calls
 
-Many tasks in workflows require a expensive "initialization" steps that, once performed, can be used across multiple tasks.
-For example, you may want to reuse a machine learning model for multiple interface tasks but want to avoid loading it onto GPUs more than once.
-We show a few Python examples of how to avoid repeating these costly initializations in ways that work with many workflow systems.
+Many tasks in workflows require a expensive "initialization" steps that, once performed, can be used across successive invocations for that task.
+For example, you may want to reuse a machine learning model for multiple interface tasks and avoid loading it onto GPUs more than once.
+We show a few Python examples of how to avoid repeating costly initializations in ways that work with many workflow systems.
 
 ## First, some background on workflow engines and Python
 
